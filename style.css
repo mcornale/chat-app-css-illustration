@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    background-color: hsl(270, 20%, 96%);
+    background-color: white;
     font-family: "Rubik", sans-serif;
     position: relative;
 }
@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     height: 70%;
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 270px 270px;
     background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     transform: translate(-50%, -30%);
     max-width: 400px;
@@ -46,21 +46,22 @@ body {
     bottom: 0;
     width: 100%;
     height: 50%;
-    border-radius: 50% 50% 0 0;
-    background: hsl(272, 41%, 93%);
+    border-radius: 270px 270px 0 0;
+    background: linear-gradient(to bottom, #f7f5fa, #f9f4fa);
     transform: translateX(50%);
     max-width: 400px;
 }
 
 .phone {
     position: relative;
-    width: 260px;
-    border-radius: 40px;
+    width: 250px;
+    border-radius: 30px;
     background-color: hsl(255, 100%, 100%);
     border: 10px solid white;
     overflow: hidden;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+    box-shadow: 0 0.4px 1.6px rgba(0, 0, 0, 0.017), 0 0.9px 3.6px rgba(0, 0, 0, 0.024),
+        0 1.6px 6.3px rgba(0, 0, 0, 0.03), 0 2.5px 10px rgba(0, 0, 0, 0.035), 0 3.9px 15.5px rgba(0, 0, 0, 0.04),
+        0 6px 24.1px rgba(0, 0, 0, 0.046), 0 10px 40px rgba(0, 0, 0, 0.053), 0 20px 80px rgba(0, 0, 0, 0.07);
 }
 
 .phone::before {
@@ -314,15 +315,15 @@ body {
     }
 
     .background-img-left {
-        max-width: 550px;
-        height: 100%;
-        transform: translate(-20%, -10%);
+        max-width: 540px;
+        height: 125%;
+        transform: translate(-18%, -30%);
     }
 
     .background-img-right {
-        max-width: 550px;
+        max-width: 540px;
         height: 85%;
-        transform: translateX(40%);
+        transform: translateX(35%);
     }
 
     .left-section {
@@ -338,6 +339,10 @@ body {
     .right-section {
         flex: 1 1 50%;
         text-align: left;
+    }
+
+    .description-text h1 {
+        font-size: 2.2rem;
     }
 
     .description-text p {
